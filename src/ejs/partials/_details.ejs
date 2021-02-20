@@ -1,0 +1,34 @@
+<section class="details bg-primary">
+    <div class="container">
+        <div class="title white">経営セミナー詳細</div>
+
+        <div class="details__desc">
+            専門家 社長のための<br>
+            脱・職人『経営の仕組み化』<br>
+            実践セミナー［2021］<br>
+            <span class="details__desc_small">〜 年商3000万円を突破する会社組織の創り方 〜</span>
+        </div>
+
+        <div class="flex">
+            <div class="details__card">
+                <div class="details__card__title">開催</div>
+                <div class="details__card__content primary">オンラインZoom</div>
+            </div>
+            <div class="details__card">
+                <div class="details__card__title">人数</div>
+                <div class="details__card__content primary">５名限定（先着順）</div>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="details__card2">
+                <% for (var i = 0; i < 4; i++) { %>
+                    <%- include('./components/_details-card'); %>
+                <% } %>
+            </div>
+        </div>
+
+        <a href="https://www.google.com" class="button">経営セミナーに参加する</a>
+    </div>
+
+</section>
