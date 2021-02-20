@@ -1,0 +1,44 @@
+{
+  "name": "npm-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "scripts": {
+    "imagemin": "imagemin src/img/**/* --out-dir=assets/img",
+    "ejs": "ejs-cli --base-dir src/ejs '*.ejs' --out ./",
+    "css": "node-sass --importer node_modules/node-sass-globbing/index.js --include-path scss src/scss/style.scss style.css",
+    "ujs1": "uglifyjs src/js/app.js -c -o assets/js/app.js",
+    "ujs": "npm run ujs1",
+    "serve-html": "browser-sync start --server --files='*.html, *.css' --no-notify",
+    "serve-wp": "node ./src/js/browser-sync.js --no-notify",
+    "watch-css": "nodemon -e scss -x \"npm run css\"",
+    "watch-ejs": "nodemon -e ejs -x \"npm run ejs \"",
+    "watch-js": "nodemon --watch assets/_js -e js -x \"npm run ujs\"",
+    "watch": "npm run watch-css | npm run watch-ejs | npm run watch-js",
+    "start": "npm run imagemin ; npm run ejs | npm run css | npm run watch | npm run serve-html",
+    "test": "npm run imagemin ; npm run css | npm run ejs",
+    "backstop": "node_modules/backstopjs/cli/index.js --config=./backstop.config.js",
+    "bsref": "npm run backstop reference",
+    "bstest": "npm run backstop test",
+    "bsapprove": "npm run backstop approve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:musus/npm-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^5.0.6",
+    "browser-sync": "^2.26.12",
+    "ejs-cli": "^2.2.1",
+    "gulp-watch": "^5.0.1",
+    "imagemin-cli": "^5.1.0",
+    "minimatch": "^3.0.4",
+    "node-sass": "^4.14.1",
+    "node-sass-globbing": "0.0.23",
+    "nodemon": "^1.19.4",
+    "set-value": ">=2.0.1",
+    "uglify-js": "^3.11.0"
+  }
+}
