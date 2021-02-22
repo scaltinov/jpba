@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+.service{
+  padding-bottom: 100px;
+  &__desc{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  & > .container > img{
+    margin-bottom: 80px;
+  }
+
+  &__gallery{
+    &__item{
+      &__desc{
+        font-size: 26px;
+        text-align: left;
+      }
+    }
+  }
+}

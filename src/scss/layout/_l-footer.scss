@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+.footer{
+  &__logo{
+    margin-top: 30px;
+  }
+  a{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: block;
+    color: black;
+  }
+
+  &__cr{
+    background: #202020;
+    padding: 2em;
+  }
+}

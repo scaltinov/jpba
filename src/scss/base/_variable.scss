@@ -2,10 +2,12 @@
 
 // color
 $color-text: #000000;
-$color-link: #3472FF;
-$color-primary: #6EBDCC;
-$color-gray: #F5F5F5;
-$color-pink: #FF978B;
+$color-link: #ffffff;
+$color-primary: #2D5DA5;
+//$color-gray: #F5F5F5;
+//$color-pink: #FF978B;
+$color-dark: #333333;
+$color-lightgray: #E5E5E5;
 
 body {
     color: $color-text;
@@ -26,7 +28,8 @@ body {
 
 html {
   // 比率は白銀比①(1.414) 基準文字サイズは10px
-    font-size: 10px;
+    font-size: 14px;
+    //font-size: 10px;
 }
 
 .ratio-s {
@@ -52,7 +55,7 @@ html {
 
 
 // layout
-$width: 940px;
+$width: 1000px;
 
 // text from well-being
 $base-fs:16px;
@@ -71,11 +74,13 @@ $tag-lh: 1.5em;
 
 // font size
 // for PC
+$fs-lll: 36px;
 $fs-ll: 30px;
-$fs-l: 21px;
+$fs-l: 24px;
 $fs-m: 18px;
-$fs-s: 14px;
-$fs-xs: 11px;
+$fs-s: 16px;
+$fs-xs: 14px;
+$fs-xxs: 11px;
 
 // for SP
 $fs-ll-sp: 12vw;

@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+.performance{
+  padding: 100px 0;
+  background-image: url(./assets/img/performance-background.jpg);
+  background-size: cover;
+
+  .title{
+    line-height: 0.8em;
+  }
+
+  &__desc{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: left;
+    > div{
+      flex-basis: 50%;
+
+      &:first-of-type{
+        color: #5E85BE;
+        font-size: 36px;
+        line-height: 53px;
+        font-weight: bold;
+      }
+      &:last-of-type{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+  }
+
+  &__desc2{
+    margin-top: 100px;
+    font-size: 26px;
+  }
+}

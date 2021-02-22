@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+.vision{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin-bottom: 120px;
+  position: relative;
+  &:after{
+    content: '';
+    width: 135%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: $color-primary;
+    z-index: -1;
+    transform: translateX(-50%) rotate(-15deg);
+  }
+
+  &__text{
+    margin-top: 50px;
+    font-size: 26px;
+    line-height: 1.5em;
+
+    &_emphasis{
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      &:before{
+        content: '';
+        width: 110%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        border-bottom: .8em solid #CA9A1E;
+      }
+    }
+  }
+}

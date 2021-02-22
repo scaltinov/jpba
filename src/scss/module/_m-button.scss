@@ -1,5 +1,22 @@
 @charset 'utf-8';
 
 .button {
+  background: #DD0000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  color: white;
+  padding: .5em;
+  font-size: $fs-ll;
+  font-weight: bold;
 
+  &:before{
+    content: url(./assets/img/ico-man3.svg);
+    padding: .5em;
+    vertical-align: middle;
+  }
+  &:after{
+    content: url(./assets/img/ico-arrow.svg);
+    padding: .5em;
+    vertical-align: middle;
+  }
 }

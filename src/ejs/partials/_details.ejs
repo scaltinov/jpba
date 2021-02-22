@@ -1,8 +1,8 @@
-<section class="details bg-primary">
+<section class="details">
     <div class="container">
         <div class="title white">経営セミナー詳細</div>
 
-        <div class="details__desc">
+        <div class="details__desc white">
             専門家 社長のための<br>
             脱・職人『経営の仕組み化』<br>
             実践セミナー［2021］<br>
@@ -10,22 +10,26 @@
         </div>
 
         <div class="flex">
-            <div class="details__card">
-                <div class="details__card__title">開催</div>
-                <div class="details__card__content primary">オンラインZoom</div>
+            <div class="flex-item flex-item-50">
+                <div class="details__card">
+                    <div class="details__card__title white">開催</div>
+                    <div class="details__card__content primary">オンラインZoom</div>
+                </div>
             </div>
-            <div class="details__card">
-                <div class="details__card__title">人数</div>
-                <div class="details__card__content primary">５名限定（先着順）</div>
+            <div class="flex-item flex-item-50">
+                <div class="details__card">
+                    <div class="details__card__title white">人数</div>
+                    <div class="details__card__content primary">５名限定（先着順）</div>
+                </div>
             </div>
         </div>
 
-        <div class="flex">
-            <div class="details__card2">
-                <% for (var i = 0; i < 4; i++) { %>
+        <div class="flex flex-wrap">
+            <% for (var i = 0; i < 4; i++) { %>
+                <div class="flex-item flex-item-50">
                     <%- include('./components/_details-card'); %>
-                <% } %>
-            </div>
+                </div>
+            <% } %>
         </div>
 
         <a href="https://www.google.com" class="button">経営セミナーに参加する</a>
