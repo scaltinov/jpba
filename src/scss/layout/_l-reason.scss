@@ -8,13 +8,17 @@
     margin-top: 80px;
     margin-bottom: 80px;
     font-size: 26px;
-    line-height: 38px;
+    line-height: 1.5em;
     text-align: left;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-l-sp;
+    }
   }
 
   &__content{
     margin-top: 80px;
     margin-bottom: 80px;
+
     &__man{
       flex-basis: 40%;
       .img{
@@ -24,9 +28,15 @@
         margin-top: 10px;
         &__kanji{
           font-size: $fs-l;
+          @media screen and (max-width:$sp-width) {
+            font-size: $fs-l-sp;
+          }
         }
         &__roma{
           font-size: $fs-m;
+          @media screen and (max-width:$sp-width) {
+            font-size: $fs-m-sp;
+          }
         }
       }
     }
@@ -51,10 +61,16 @@
         background: #5E85BE;
         font-size: $fs-ll;
         padding: .5em 0;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
       }
       &__content{
         margin-top: 50px;
         margin-bottom: 100px;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-s-sp;
+        }
       }
     }
   }
@@ -63,13 +79,19 @@
     margin-top: 70px;
     margin-bottom: 70px;
     font-size: 26px;
-    line-height: 38px;
+    line-height: 1.5em;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-l-sp;
+    }
   }
 
   &__recommend{
     border: 20px solid #5E85BE;
     position: relative;
     margin-top: 130px;
+    @media screen and (max-width:$sp-width) {
+      border: 10px solid #5E85BE;
+    }
 
     &__title{
       position: absolute;
@@ -81,19 +103,42 @@
       background-color: white;
       display: inline-block;
       width: 15em;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-ll-sp;
+      }
     }
     &__content{
       padding: 80px 60px 40px;
+      @media screen and (max-width:$sp-width) {
+        padding: 30px 15px 20px;
+      }
+
       ul{
         text-align: left;
         > li {
           font-size: $fs-ll;
           line-height: 70px;
           font-weight: bold;
+          @media screen and (max-width:$sp-width) {
+            font-size: $fs-l-sp;
+            line-height: 1.5em;
+          }
+
           &:before{
-            content: url(./assets/img/ico-check.png);
+            content: '';
+            display: inline-block;
+            width: 49px;
+            height: 40px;
+            background-image: url(./assets/img/ico-check.png);
+            background-size: contain;
+            background-repeat: no-repeat;
             vertical-align: middle;
             margin-right: 10px;
+            @media screen and (max-width:$sp-width) {
+              height: $fs-l-sp;
+              width: $fs-l-sp;
+              margin-right: 5px;
+            }
           }
         }
       }

@@ -8,6 +8,10 @@
     > li{}
     li + li{
       margin-top: 40px;
+      @media screen and (max-width:$sp-width) {
+        margin-top: 20px;
+      }
+
     }
   }
 
@@ -21,6 +25,10 @@
       &__img{
         margin-right: 1em;
         width: 40px;
+        @media screen and (max-width:$sp-width) {
+          width: 20px;
+        }
+
       }
       &__content{
         flex: 1;
@@ -31,9 +39,15 @@
       font-size: $fs-l;
       background: #FFFFFF;
       box-shadow: 0 0 10px 9px rgba(0, 0, 0, 0.05);
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-l-sp;
+      }
     }
     &__a{
       font-size: 26px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-l-sp;
+      }
     }
   }
 
@@ -43,6 +57,11 @@
     padding: 1em;
     text-align: left;
     font-size: 26px;
+    @media screen and (max-width:$sp-width) {
+      margin-top: 100px;
+      font-size: $fs-l-sp;
+    }
+
   }
 }
 

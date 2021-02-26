@@ -5,9 +5,14 @@
   padding-bottom: 100px;
   margin-bottom: 120px;
   position: relative;
+
+  .title{
+    margin-top: 10px;
+  }
+
   &:after{
     content: '';
-    width: 135%;
+    width: 200%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -21,11 +26,20 @@
     margin-top: 50px;
     font-size: 26px;
     line-height: 1.5em;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-m-sp;
+    }
 
     &_emphasis{
+      font-size: $fs-lll;
+      line-height: 2em;
       font-weight: bold;
       position: relative;
       z-index: 1;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-l-sp;
+      }
+
       &:before{
         content: '';
         width: 110%;

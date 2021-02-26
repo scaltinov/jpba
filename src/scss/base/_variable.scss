@@ -56,6 +56,7 @@ html {
 
 // layout
 $width: 1000px;
+$sp-width: 800px;
 
 // text from well-being
 $base-fs:16px;
@@ -83,8 +84,10 @@ $fs-xs: 14px;
 $fs-xxs: 11px;
 
 // for SP
-$fs-ll-sp: 12vw;
-$fs-l-sp: 10vw;
-$fs-m-sp: 7vw;
-$fs-s-sp: 5vw;
-$fs-xs-sp: 3.6vw;
+$fs-lll-sp: 8vw;
+$fs-ll-sp: 6vw;
+$fs-l-sp: 4vw;
+$fs-m-sp: 3.5vw;
+$fs-s-sp: 3vw;
+$fs-xs-sp: 2.5vw;
+$fs-xxs-sp: 2vw;

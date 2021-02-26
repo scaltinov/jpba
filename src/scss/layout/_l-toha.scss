@@ -10,6 +10,9 @@
     margin-top: 70px;
     font-size: $fs-m;
     text-align: left;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-m-sp;
+    }
   }
 
   &__tree{
@@ -18,10 +21,24 @@
     &__desc{
       margin: 1em 0;
       font-size: 29px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-m-sp;
+      }
+
     }
 
-    &__img{
+    @media screen and (max-width:$sp-width) {
+      img{
+        width: 50%;
+      }
+    }
+    &__man{
       border-radius: 50%;
+    }
+    &__img{
+      @media screen and (max-width:$sp-width) {
+        width: 75% !important;
+      }
     }
     &__branch{
       &.flex{
@@ -30,15 +47,20 @@
       margin-top: 20px;
 
       > li{
-        flex-basis: calc(100%/3);
         ul{
           margin-top: .5em;
           text-align: left;
           font-size: 20px;
+          @media screen and (max-width:$sp-width) {
+            font-size: $fs-s-sp;
+          }
         }
       }
       &__title{
         font-size: $fs-ll;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-l-sp;
+        }
       }
     }
   }
@@ -49,11 +71,18 @@
       background: #5E85BE;
       font-size: $fs-lll;
       padding: .5em 0;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-lll-sp;
+      }
     }
     &__content{
       background: white;
       padding: 20px;
-      &__desc{}
+      &__desc{
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-s-sp;
+        }
+      }
     }
   }
 }

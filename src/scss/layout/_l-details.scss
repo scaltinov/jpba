@@ -8,9 +8,21 @@
     margin-top: 80px;
     font-size: 36px;
     font-weight: bold;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-lll-sp;
+    }
     &_small{
       font-size: 26px;
       font-weight: normal;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-l-sp;
+      }
+    }
+  }
+
+  @media screen and (max-width:$sp-width) {
+    .flex{
+      margin-top: 50px;
     }
   }
 
@@ -19,6 +31,11 @@
     margin-bottom: 100px;
     display: flex;
     font-size: 26px;
+    @media screen and (max-width:$sp-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $fs-l-sp;
+    }
 
     &__title{
       padding: 1em;
@@ -41,11 +58,20 @@
 
     &__date{
       font-size: 28px;
+      @media screen and (max-width:$sp-width) {
+        font-size: 19px;
+      }
     }
     &__content{
       font-size: 20px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-m-sp;
+      }
       &_large{
         font-size: 30px;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
       }
     }
   }

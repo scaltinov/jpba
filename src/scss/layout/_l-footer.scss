@@ -1,6 +1,10 @@
 @charset 'utf-8';
 
 .footer{
+  @media screen and (max-width:$sp-width) {
+    font-size: $fs-xs-sp;
+  }
+
   &__logo{
     margin-top: 30px;
   }
@@ -9,6 +13,10 @@
     margin-bottom: 100px;
     display: block;
     color: black;
+    @media screen and (max-width:$sp-width) {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
   }
 
   &__cr{

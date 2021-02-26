@@ -8,6 +8,9 @@
   padding: .5em;
   font-size: $fs-ll;
   font-weight: bold;
+  @media screen and (max-width:$sp-width) {
+    font-size: $fs-l-sp;
+  }
 
   &:before{
     content: url(./assets/img/ico-man3.svg);

@@ -14,24 +14,37 @@
     margin-bottom: 80px;
     text-align: left;
     > div{
-      flex-basis: 50%;
+      flex-bahgfsis: 50%;
 
       &:first-of-type{
         color: #5E85BE;
         font-size: 36px;
-        line-height: 53px;
+        line-height: 1.5em;
         font-weight: bold;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
       }
       &:last-of-type{
         font-size: 20px;
-        line-height: 30px;
+        line-height: 1.5em;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-l-sp;
+        }
       }
     }
 
   }
 
+  .flex-item-33{
+    flex-basis: 100% !important;
+  }
+
   &__desc2{
     margin-top: 100px;
     font-size: 26px;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-l-sp;
+    }
   }
 }

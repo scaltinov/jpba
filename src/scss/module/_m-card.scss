@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
 .card {
-  //flex-basis: 310px;
-  flex-basis: calc(100%/3);
-  height: 300px;
   box-sizing: border-box;
   padding: 20px;
   background: white;
   box-shadow: 0 0 100px 9px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width:$sp-width) {
+    padding: 5px;
+  }
 
   &__ico{
     height: 110px;
@@ -19,9 +19,15 @@
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-m-sp;
+    }
   }
   &__desc{
     margin-top: 10px;
     font-size: $fs-s;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-s-sp;
+    }
   }
 }

@@ -6,8 +6,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   &__ico{
     flex-basis: 100%;
+    @media screen and (max-width:$sp-width) {
+      flex-basis: 50%;
+    }
     > img{
-      //width: 100%;
+      width: 100%;
       height: 100%;
     }
 
@@ -18,9 +21,18 @@
     box-sizing: border-box;
     &__title{
       font-size: 20px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-m-sp;
+      }
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-m-sp;
+      }
     }
     &__desc{
       font-size: $fs-s;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-s-sp;
+      }
     }
   }
 }

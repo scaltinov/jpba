@@ -5,26 +5,45 @@
   margin: 0 auto;
   max-width: $width;
   text-align: center;
+
+  @media screen and (max-width:$sp-width) {
+    box-sizing: border-box;
+    padding: 0 10px;
+    max-width: 100%;
+  }
 }
 
 .flex{
   display: flex;
   justify-content: center;
   margin: 0 -15px;
+  @media screen and (max-width:$sp-width) {
+    margin: 0 -5px;
+  }
   > .flex-item{
     padding: 15px;
     box-sizing: border-box;
+    @media screen and (max-width:$sp-width) {
+      padding: 5px;
+    }
 
     &-33{
       flex-basis: calc(100%/3);
+      @media screen and (max-width:$sp-width) {
+        flex-basis: 50%;
+      }
     }
     &-50{
       flex-basis: 50%;
+      @media screen and (max-width:$sp-width) {
+        flex-basis: 100%;
+      }
     }
   }
 
   &-col{
     flex-direction: column;
+    align-items: center;
   }
   &-wrap{
     flex-wrap: wrap;
@@ -44,8 +63,14 @@
 .title{
   font-size: 62px;
   font-weight: bold;
+  @media screen and (max-width:$sp-width) {
+    font-size: $fs-ll-sp;
+  }
   &_small{
     font-size: 40px;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-m-sp;
+    }
   }
 }
 

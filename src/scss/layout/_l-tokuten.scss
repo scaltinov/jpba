@@ -20,23 +20,41 @@
       box-shadow: 0 0 10px 9px rgba(0, 0, 0, 0.05);
       padding: 30px 40px;
       text-align: left;
+      @media screen and (max-width:$sp-width) {
+        padding: 15px 20px;
+      }
     }
     li + li{
       margin-top: 20px;
+      @media screen and (max-width:$sp-width) {
+        margin-top: 10px;
+      }
     }
 
     &__content{
       display: flex;
 
+      &__img{
+        @media screen and (max-width:$sp-width) {
+          flex-basis: 20%;
+        }
+      }
       &__title{
         font-size: 33px;
-        line-height: 43px;
+        line-height: 1.3em;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
       }
 
     }
     &__desc{
       margin-top: 20px;
       font-size: $fs-s;
+      @media screen and (max-width:$sp-width) {
+        margin-top: 10px;
+        font-size: $fs-s-sp;
+      }
     }
   }
 }

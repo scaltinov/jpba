@@ -4,6 +4,7 @@
   position: relative;
   background-image: url("./assets/img/top-header.jpg");
   background-size: cover;
+  padding-top: 30px;
   padding-bottom: 100px;
 
   &__text{
@@ -18,6 +19,9 @@
         position: relative;
         display: inline-block;
         padding: 10px 50px;
+        @media screen and (max-width:$sp-width) {
+          padding: 10px 10px;
+        }
 
         &:before{
           content: "";
@@ -25,19 +29,27 @@
           top: 0; bottom: 0; left: 0; right: 0;
           z-index: -1;
           transform: skewX(-45deg);
+          @media screen and (max-width:$sp-width) {
+            transform: skewX(-5deg);
+          }
         }
-
       }
 
       &:first-child{
         font-size: $fs-l;
         font-weight: bold;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-m-sp;
+        }
 
         &:before{
           background-color: $color-dark;
         }
       }
       &:last-child{
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-xxs-sp;
+        }
         &:before{
           background-color: $color-primary;
         }
@@ -53,6 +65,9 @@
     padding-top: 40px;
     font-weight: bold;
     z-index: 1;
+    @media screen and (max-width:$sp-width) {
+      font-size: $fs-l-sp;
+    }
 
     &:before{
       content: url(./assets/img/top-grass.png);
@@ -75,6 +90,11 @@
   &__text3{
     margin-top: 24px;
     font-size: $fs-m;
+    @media screen and (max-width:$sp-width) {
+      margin-top: 4em;
+      font-size: $fs-m-sp;
+
+    }
 
   }
 }

@@ -20,7 +20,7 @@
   }
   &:after{
     content: '';
-    width: 120%;
+    width: 200%;
     height: 600px;
     position: absolute;
     top: 0;
@@ -68,19 +68,32 @@
     box-shadow: 0 0 100px 9px rgba(0, 0, 0, 0.1);
     padding-bottom: 90px;
     z-index: -1;
+    @media screen and (max-width:$sp-width) {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
 
     &__title{
       font-weight: bold;
       font-size: 96px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-lll-sp;
+      }
+
       &_small{
         font-size: 76px;
         position: relative;
         z-index: 1;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
+
         &:before{
           content: '';
           position: absolute;
           top: 50%; left: 50%;
-          width: 56px; height: 56px;
+          width: 1em; height: 1em;
           background-color: #D9CC9D;
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
           z-index: -1;
@@ -92,13 +105,23 @@
     &__subtitle{
       font-size: 48px;
       font-weight: bold;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-ll-sp;
+      }
+
       &_large{
         font-size: 64px;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-lll-sp;
+        }
       }
     }
 
     &__desc{
       font-size: $fs-m;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-m-sp;
+      }
     }
     
     &__img{
@@ -113,8 +136,12 @@
       margin: 90px 40px 0 40px;
       background: #FFD6D6;
       font-size: $fs-m;
-      padding: 1em 0;
+      padding: 1em;
       position: relative;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-s-sp;
+      }
+
       &:before{
         content: 'ATTENTION';
         color: white;
@@ -151,8 +178,22 @@
 
     padding-top: 80px;
     padding-bottom: 50px;
+    @media screen and (max-width:$sp-width) {
+      display: block;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
     &__text{
       position: relative;
+      padding: 10px;
+      @media screen and (max-width:$sp-width) {
+        font-size: $fs-ll-sp;
+        display: block;
+
+
+      }
+
       &__circle{
         position: absolute;
         top: -1em;
@@ -162,12 +203,18 @@
         font-weight: bold;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-text-stroke: 1px #838D0D;
+        @media screen and (max-width:$sp-width) {
+          top:  -1em;
+          left: 1.5em;
+          font-size: $fs-xs-sp;
+          -webkit-text-stroke: initial;
+        }
 
         &:before{
           content: '';
           background: #65B923;
-          width: 87px;
-          height: 87px;
+          width: 5em;
+          height: 5em;
           border-radius: 50%;
           position: absolute;
           top: 50%;
@@ -178,9 +225,15 @@
       }
       &__before{
         font-size: $fs-lll;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
       }
       &__title{
         font-size: 72px;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-lll-sp;
+        }
       }
       &__after{
         font-size: $fs-lll;
@@ -188,8 +241,11 @@
         line-height: 2em;
         padding: 0 .5em;
         display: inline-block;
-
         position: relative;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-ll-sp;
+        }
+
         &:before{
           content: '';
           position: absolute;
@@ -214,6 +270,9 @@
       }
       &__desc{
         margin-top: 30px;
+        @media screen and (max-width:$sp-width) {
+          font-size: $fs-s-sp;
+        }
       }
     }
   }
