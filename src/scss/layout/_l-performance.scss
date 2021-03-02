@@ -14,7 +14,7 @@
     margin-bottom: 80px;
     text-align: left;
     > div{
-      flex-bahgfsis: 50%;
+      flex-basis: 50%;
 
       &:first-of-type{
         color: #5E85BE;
@@ -37,7 +37,9 @@
   }
 
   .flex-item-33{
-    flex-basis: 100% !important;
+    @media screen and (max-width:$sp-width) {
+      flex-basis: 100% !important;
+    }
   }
 
   &__desc2{
